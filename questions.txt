@@ -1,24 +1,39 @@
 Your name
 CSCI-305
 
-10.
+10. Testing out a few other words I got these results:
+	is a little girl in the world is a little girl in the world is a little girl in the
+	yes i love you are you are you are you are you are you are you are you are you
+	hello my heart of the world is a little girl in the world is a little girl in the world
+	the world is a little girl in the world is a little girl in the world is a little girl
+	bad luck blues for the world is a little girl in the world is a little girl in the world
+	autumn leaves of the world is a little girl in the world is a little girl in the world is
+	you are you are you are you are you are you are you are you are you are you are
 
-14.
+	It seems like the song title more often than not gets caught in an infinite loop typically between 2 - 4 words until terminated at 20 words.
+	This doesn't make the song title look that good and should be handled to terminate after the first sequence of the infinite loop. The common pattern here seems to be "the world is a little girl in". WHich is typically started from the word "the" which is obviously very common among these song lists.
 
-15.
+14. The song titles devolve into repeating patterns because a lot of the common words in all of the song titles link to each each other in some form or another. Since these common words are littered   	throughout the whole dataset, it is quite likely a title will link to at one of these words.
 
-16.
+15. After using the 'black' as the first word in the song title, I was given the result: 'black white sport coat no sunshine when i want is you ready algone' consisting of 13 words since no word followed the word 'algone' - whatever that means.
 
-19.
+16. To fix the repeating word problem, in my create_title method I check to see if the word it is about to add to the title is already in the title. If so, I break from the loop and the title is complete without any repitions. I used the .include? method which runs at O(n) time complexity. This inevitably does impact the the performance but since the current titles are usually not that long, it doesn't seem to hinder it too much.
 
-20.
+17. "montana sacra nova scotia"
 
-21.
+18. "bob marley vs world is my heart"
 
-22.
+19. Variation 1 = "bob marley me down road blues night long way you are" variation 2 = "bob marley song you are"
+The title changes each time because the words have multiple "most popular" words after them and the decision to choose one over the other is randomized.
 
-23.
+20. My favorite song title was "pain my heart is" since I could truely resonate with the words while debugging my code.
 
-24.
+21. I really enjoyed the relaxed sort of syntax in ruby where, for example, I could choose to put things in parentheses or not. I know this could potentially lead to more errors, however, I found the speed of programming to be much faster and not at all verbose.
 
-25.
+22. Since I have spent most of my time programming in typed languages, I find it very annoying trying to debug my code in this typeless language. I really have to know exactly what I am assigning to each variable and data structure.
+
+23. I actually really did enjoy this lab compared to some of the other labs I have had to do as part of my course work. I liked programming in a language that I hadn't used before and utilizing a paradigm that I wasn't particularly familiar with. It was also quite entertaining to see what song titles I could generate and imagining new releases actually being titled this. The only dislike that I had was that because the unique_tracks.txt dataset was so large, it would take over a minute to process the file and run the program while I just sat idling, crossing my fingers that it would work only to realize that I forgotten to save the new line that I had just added.
+
+24. Including the time of figuring out the logic, debugging, writing the responses, etc. I would say the probably spent around 5-6 hours in total on this lab.
+
+25. I would definitely be interested in using Ruby again, especially taking use of its scripting abilities to automate some sort of process that most people would typically have to do by hand.

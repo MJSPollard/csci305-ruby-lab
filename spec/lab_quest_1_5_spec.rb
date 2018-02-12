@@ -13,7 +13,7 @@ RSpec.describe "Lab Questions Check" do
     end
 
     it "3. Unique words following 'computer'" do
-      expect($bigrams['computer'].count).to eq(58)
+      expect($bigrams["computer"].count).to eq(58)
     end
 
     it "4. Word most often following 'computer'" do
@@ -21,7 +21,7 @@ RSpec.describe "Lab Questions Check" do
     end
 
     it "5. How often does this word follow 'computer'" do
-      expect($bigrams['computer']['love']).to eq(13)
+      expect($bigrams["computer"]["love"]).to eq(13)
     end
   end
 end
